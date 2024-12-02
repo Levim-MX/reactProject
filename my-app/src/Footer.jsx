@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import "./app.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
@@ -28,7 +30,7 @@ const Footer = () => {
             </li>
             <li>
               <a onClick={() => scrollToSection('About')} style={{ cursor: 'pointer' }}>
-              About
+                About
               </a>
             </li>
             <li>
@@ -48,13 +50,13 @@ const Footer = () => {
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              Facebook
+              <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              Twitter
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              Instagram
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
         </div>
