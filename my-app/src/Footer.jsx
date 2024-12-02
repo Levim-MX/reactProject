@@ -2,23 +2,45 @@ import React from "react";
 import "./Footer.css";
 import "./app.css";
 
-
 const Footer = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <h2>My Website</h2>
-          <p>Providing quality services since 2024.</p>
+          <h2>CarFix</h2>
+          <p>Providing quality services since 2010.</p>
         </div>
 
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a onClick={() => scrollToSection('HeaderBar')} style={{ cursor: 'pointer' }}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection('About')} style={{ cursor: 'pointer' }}>
+              About
+              </a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection('Services')} style={{ cursor: 'pointer' }}>
+                Services
+              </a>
+            </li>
+            <li>
+              <a onClick={() => scrollToSection('contact')} style={{ cursor: 'pointer' }}>
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -38,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2024 CarFix. All rights reserved.</p>
       </div>
     </footer>
   );

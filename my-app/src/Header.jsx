@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="HeaderBar">
+    <header className="HeaderBar"  id='HeaderBar'>
       <a href="#" className="logo">CarFix.</a>
       <nav className="navbar">
         <a href="#" className="activ" onClick={() => scrollToSection('Home')}>Home</a>

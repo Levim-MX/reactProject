@@ -3,6 +3,14 @@ import './Home.css';
 import './app.css'
 
 function Home() {
+
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="home">
       <div className="home-text">
@@ -15,7 +23,8 @@ function Home() {
           خدماتنا تشمل صيانة كافة اجزاء السيارة ,بأحدث الأجهزة وبأيادي محترفة ومتمرسة
         </p>
         <div className="button-box">
-          <a href="#services" className="btn">تعرف على خدماتنا</a>
+        <a href="#"  className='btn' onClick={() => scrollToSection('Services')}>تعرف على خدماتنا</a>
+
           <a href="#contact" className="btn">تواصل معنا</a>
         </div>
       </div>
