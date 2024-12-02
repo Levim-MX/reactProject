@@ -1,10 +1,12 @@
 
 
-import Header from './homePageComponents/Header.jsx';
-import FQA from './homePageComponents/FQA.jsx';
-import Home from './homePageComponents/Home.jsx';
-import ServicesContent from './homePageComponents/ServicesContent.jsx';
-import Home2 from './homePageComponents/Home2.jsx';
+import Header from './Header.jsx';
+import FQA from './FQA.jsx';
+import Home from './Home.jsx';
+import ServicesContent from './ServicesContent.jsx';
+import Home2 from './Home2.jsx';
+
+import './app.css';
 
 
 
@@ -13,7 +15,7 @@ function App() {
   return (
    <>
         
-
+      
      <Header /> 
      <FQA />
      <Home/>
