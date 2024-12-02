@@ -1,6 +1,7 @@
 .Services {
-    position: absolute;
-    margin-top: 70em;
+    
+    position: relative;
+    top: 40em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +9,7 @@
 }
 
 .serverice-continar {
+    
     display: flex;
     flex-wrap: wrap;
     gap: 10em;

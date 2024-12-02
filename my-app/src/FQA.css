@@ -2,13 +2,12 @@
 
 
 .section-faq {
- margin-top: 55em;
- margin-right: 13em;
  
-   
-    position: absolute;
-    top: 10%;
-    right: 1%;
+ 
+   position: relative;
+  margin-top: 4em;
+    
+    right: 9em;
     width: 25%;
     max-width: 400px;
     background-color: #519bdc31;

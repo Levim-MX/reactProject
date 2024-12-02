@@ -11,11 +11,22 @@
 
 body {
   
-  height: 200vh;
+
   background-color: #fff6f8;
 }
-
-
+.FqaHome2{
+  text-align: center;
+   display: flex;
+   justify-content: space-between;
+   
+   
+}
+.App{
+  text-align: center;
+   min-height: 200vh;
+   display: flex;
+   flex-direction: column;
+}
 .Home {
   height: 50vh;
   display: flex;

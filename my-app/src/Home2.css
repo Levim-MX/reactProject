@@ -1,6 +1,6 @@
 .howItWork {
   position: relative;
-  top: 20em; /* تحديد الموقع بدقة */
+  top: 13em;
   left: 40%;
   transform: translateX(-50%); /* لتوسيط العنصر */
   display: flex;
@@ -18,6 +18,7 @@
 }
 
 .howItWork .cardCountinar {
+  
   display: flex;
   flex-wrap: wrap;
   gap: 8em;
@@ -38,4 +39,9 @@
 .howItWork .cardCountinar .card span {
   color: #278de9;
   font-size: 4em;
+}
+.howItWork .cardCountinar .card p {
+  color: #000000;
+  font-size: 20px;
+  padding: 15px;
 }
