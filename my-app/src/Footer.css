@@ -54,13 +54,15 @@
   }
   
   .footer-bottom {
+    
     text-align: center;
     margin-top: 20px;
     font-size: 0.9rem;
   }
   
   .footer-bottom p {
-    margin: 0;
+    margin-left: 10em;
+    margin-top: 3em;
   }
   .social-icons a {
     font-size: 1.5rem;
